@@ -1602,7 +1602,7 @@ class MDFloatingActionButtonSpeedDial(ThemableBehavior, FloatLayout):
         self.add_widget(root_button)
 
     def on_icon(self, instance, value):
-        self._get_count_widget(MDFloatingRootButton).icon = value
+        self.icon = value
 
     def on_label_text_color(self, instance, value):
         for widget in self.children:
